@@ -11,3 +11,5 @@ IE10+
 Технологии:
 - HTML5
 - CSS3
+- Gulp
+- SASS/SCSS
