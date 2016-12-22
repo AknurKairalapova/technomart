@@ -1,0 +1,20 @@
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: normal;
+    font-style: normal;
+    color: $base-text-color;
+    background: $bg-color;
+}
+
+.center-container {
+    width: $center-container-width;
+    margin: 0 auto;
+    padding: 0 10px;
+    @extend %clearfix;
+}

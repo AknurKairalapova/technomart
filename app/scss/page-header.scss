@@ -1,0 +1,34 @@
+.topbar {
+    min-height: 42px;
+    background: $topbar-bg;
+}
+
+.logo-link,
+.searchbar,
+.bookmark-link,
+.basket-link,
+.order-link {
+    float: left;
+}
+
+.logo-link {
+    display: block;
+    width: 220px;
+}
+
+.searchbar {
+    width: 270px;
+}
+
+.bookmark-link,
+.basket-link,
+.order-link {
+    display: block;
+    width: 150px;
+}
+
+
+
+.navbar {
+    background: $navbar-bg;
+}

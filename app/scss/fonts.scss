@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Cuprum Regular';
+    src: url('#{$base-font-path}/cuprum-webfont.eot');
+    src: url('#{$base-font-path}/cuprum-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/cuprum-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/cuprum-webfont.woff') format('woff'),
+         url('#{$base-font-path}/cuprum-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/cuprum-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Bold';
+    src: url('#{$base-font-path}/cuprumbold-webfont.eot');
+    src: url('#{$base-font-path}/cuprumbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/cuprumbold-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/cuprumbold-webfont.woff') format('woff'),
+         url('#{$base-font-path}/cuprumbold-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/cuprumbold-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Bold Italic';
+    src: url('#{$base-font-path}/cuprumbolditalic-webfont.eot');
+    src: url('#{$base-font-path}/cuprumbolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/cuprumbolditalic-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/cuprumbolditalic-webfont.woff') format('woff'),
+         url('#{$base-font-path}/cuprumbolditalic-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/cuprumbolditalic-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Italic';
+    src: url('#{$base-font-path}/cuprumitalic-webfont.eot');
+    src: url('#{$base-font-path}/cuprumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/cuprumitalic-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/cuprumitalic-webfont.woff') format('woff'),
+         url('#{$base-font-path}/cuprumitalic-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/cuprumitalic-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('#{$base-font-path}/ptsans-webfont.eot');
+    src: url('#{$base-font-path}/ptsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/ptsans-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/ptsans-webfont.woff') format('woff'),
+         url('#{$base-font-path}/ptsans-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/ptsans-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('#{$base-font-path}/ptsansbold-webfont.eot');
+    src: url('#{$base-font-path}/ptsansbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$base-font-path}/ptsansbold-webfont.woff2') format('woff2'),
+         url('#{$base-font-path}/ptsansbold-webfont.woff') format('woff'),
+         url('#{$base-font-path}/ptsansbold-webfont.ttf') format('truetype'),
+         url('#{$base-font-path}/ptsansbold-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

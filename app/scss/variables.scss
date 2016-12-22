@@ -1,0 +1,28 @@
+// ========================================
+//    Color scheme
+// ========================================
+$bg-color: #fff;
+$topbar-bg: #293449;
+$navbar-bg: #f1f5f7;
+
+
+// ========================================
+//    Typography
+// ========================================
+$font-family-cuprum: 'Cuprum Regular', Arial, sans-serif;
+$font-family-cuprum-bold: 'Cuprum Bold', Arial, sans-serif;
+$font-family-cuprum-bolditalic: 'Cuprum Bold Italic', Arial, sans-serif;
+$font-family-cuprum-italic: 'Cuprum Italic', Arial, sans-serif;
+$font-family-ptsans: 'PT Sans', Arial, sans-serif;
+$font-family-ptsans-bold: 'PT Sans Bold', Arial, sans-serif;
+
+$base-font-path: '../fonts';
+$base-font-family: $font-family-cuprum;
+$base-font-size: 14px;
+$base-line-height: 24px;
+$base-text-color: #000;
+
+// ========================================
+//    Box Model
+// ========================================
+$center-container-width: 960px;
