@@ -1,3 +1,4 @@
+//Topbar and its components
 .topbar {
     min-height: 42px;
     background: $topbar-bg;
@@ -27,8 +28,44 @@
     width: 150px;
 }
 
-
-
+//Navbar and its components
 .navbar {
+    padding-bottom: 60px;
     background: $navbar-bg;
+}
+
+.navbar-container {
+    @extend %clearfix;
+}
+
+.nav {
+    background: $nav-bg;
+}
+
+.page-heading,
+.contacts-info,
+.account {
+    float: left;
+}
+
+.page-heading,
+.account {
+    width: 300px;
+}
+
+.contacts-info {
+    width: 340px;
+}
+
+.nav-list {
+    @extend %resetUl;
+}
+
+.nav-item {
+    @extend %inlineBlock;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
 }

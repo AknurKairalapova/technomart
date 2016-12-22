@@ -1,0 +1,38 @@
+.navbar-bottom {
+    background-color: $navbar-bottom-bg;
+}
+
+.navbar-bottom-left {
+    float: left;
+}
+.navbar-bottom-nav {
+    float: right;
+}
+
+.page-footer-container {
+    background-color: $page-footer-container-bg;
+}
+
+.nav-bottom,
+.category-links,
+.social-links {
+    @extend %resetUl;
+}
+
+.nav-bottom-item,
+.category-item,
+.social-item {
+    @extend %inlineBlock;
+}
+
+.nav-bottom-link,
+.category-link,
+.social-link {
+    display: block;
+}
+
+.copyright,
+.social-links,
+.feedback {
+    float: left;
+}

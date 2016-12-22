@@ -8,3 +8,14 @@
         clear: both;
     }
 }
+
+%resetUl {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+%inlineBlock {
+    display: inline-block;
+    vertical-align: top;
+}

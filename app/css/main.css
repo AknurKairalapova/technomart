@@ -1,9 +1,24 @@
-.center-container:before, .center-container:after {
+.center-container:before, .navbar-container:before, .center-container:after, .navbar-container:after {
   content: " ";
   display: table;
 }
-.center-container:after {
+.center-container:after, .navbar-container:after {
   clear: both;
+}
+
+.nav-list, .nav-bottom,
+.category-links,
+.social-links {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-item, .nav-bottom-item,
+.category-item,
+.social-item {
+  display: inline-block;
+  vertical-align: top;
 }
 
 @font-face {
@@ -100,5 +115,58 @@ body {
 }
 
 .navbar {
+  padding-bottom: 60px;
   background: #f1f5f7;
+}
+
+.nav {
+  background: #32425c;
+}
+
+.page-heading,
+.contacts-info,
+.account {
+  float: left;
+}
+
+.page-heading,
+.account {
+  width: 300px;
+}
+
+.contacts-info {
+  width: 340px;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+}
+
+.navbar-bottom {
+  background-color: #32425c;
+}
+
+.navbar-bottom-left {
+  float: left;
+}
+
+.navbar-bottom-nav {
+  float: right;
+}
+
+.page-footer-container {
+  background-color: #293449;
+}
+
+.nav-bottom-link,
+.category-link,
+.social-link {
+  display: block;
+}
+
+.copyright,
+.social-links,
+.feedback {
+  float: left;
 }
