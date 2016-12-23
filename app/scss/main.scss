@@ -10,6 +10,8 @@
 // ========================================
 @import "fonts.scss";
 
+@import "icons.scss";
+
 // ========================================
 //    Layout
 // ========================================
@@ -17,3 +19,11 @@
 
 @import "page-header.scss";
 @import "page-footer.scss";
+
+// ========================================
+//    Pages
+// ========================================
+@import "offer-preview.scss";
+@import "catalog-preview.scss";
+@import "services.scss";
+@import "company.scss";

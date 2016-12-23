@@ -1,5 +1,24 @@
-@mixin box-sizing ($value){
+@mixin box-sizing ($value) {
     -webkit-box-sizing: $value;
     -moz-box-sizing: $value;
     box-sizing: $value;
+}
+
+@mixin placeholder-color ($value) {
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $value;
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $value;
+    }
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $value;
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $value;
+    }
 }

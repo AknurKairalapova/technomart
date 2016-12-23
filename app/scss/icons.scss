@@ -1,0 +1,18 @@
+.icon {
+    background-image: url(/img/spritesheet.png);
+    background-repeat: no-repeat;
+    // display: block;
+}
+
+.icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -446px -32px;
+}
+
+.icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -505px -32px;
+}
+

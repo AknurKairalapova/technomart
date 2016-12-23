@@ -1,0 +1,35 @@
+.catalog-preview  {
+    margin-bottom: 80px;
+}
+.catalog-preview-header {
+    margin-bottom: 20px;    
+    background-color: #f7f3ec;
+    @extend %clearfix;
+
+    .btn {
+        float: right;
+    }
+}
+
+.catalog-preview-title {
+    float: left;
+    padding: 30px;
+}
+
+.catalog-preview-goods,
+.catalog-preview-manufactures {
+    font-size: 0;
+}
+
+.catalog-item {
+    @extend %inlineBlock;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}

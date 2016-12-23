@@ -3,10 +3,16 @@
 // ========================================
 $bg-color: #fff;
 $topbar-bg: #293449;
+$topbar-bg-hover: #212a3a;
+$topbar-bg-active: #161d29;
 $navbar-bg: #f1f5f7;
 $nav-bg: #32425c;
 $navbar-bottom-bg: $nav-bg;
 $page-footer-container-bg: $topbar-bg;
+$services-bg: #f2f6f8;
+$logo-link-bg: #ee3643;
+$logo-link-bg-hover: #ca2c37;
+$logo-link-bg-active: #ba2732;
 
 
 // ========================================
@@ -29,3 +35,8 @@ $base-text-color: #000;
 //    Box Model
 // ========================================
 $center-container-width: 960px;
+
+
+
+//
+$path-spritesheet: "/img/spritesheet.png";

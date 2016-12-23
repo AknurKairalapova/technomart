@@ -1,0 +1,188 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+.sprite-icon-chbx-checked {
+    width: 27px;
+    height: 23px;
+    background-position: -158px -5px;
+}
+
+.sprite-icon-chbx-xhecked-active {
+    width: 27px;
+    height: 23px;
+    background-position: -195px -5px;
+}
+
+.sprite-icon-chbx-xhecked-hover {
+    width: 27px;
+    height: 23px;
+    background-position: -232px -5px;
+}
+
+.sprite-icon-delivery {
+    width: 78px;
+    height: 63px;
+    background-position: -269px -5px;
+}
+
+.sprite-icon-discount {
+    width: 59px;
+    height: 72px;
+    background-position: -357px -5px;
+}
+
+.sprite-icon-fcb {
+    width: 10px;
+    height: 18px;
+    background-position: -426px -5px;
+}
+
+.sprite-icon-inst {
+    width: 17px;
+    height: 17px;
+    background-position: -446px -5px;
+}
+
+.sprite-icon-left {
+    width: 22px;
+    height: 40px;
+    background-position: -473px -5px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -505px -5px;
+}
+
+.sprite-icon-login-active {
+    width: 20px;
+    height: 17px;
+    background-position: -535px -5px;
+}
+
+.sprite-icon-login-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -565px -5px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -595px -5px;
+}
+
+.sprite-icon-logout-active {
+    width: 21px;
+    height: 17px;
+    background-position: -626px -5px;
+}
+
+.sprite-icon-logout-hover {
+    width: 21px;
+    height: 17px;
+    background-position: -5px -32px;
+}
+
+.sprite-icon-materials {
+    width: 44px;
+    height: 65px;
+    background-position: -36px -32px;
+}
+
+
+
+.sprite-icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -119px -32px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -446px -32px;
+}
+
+.sprite-icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -505px -32px;
+}
+
+.sprite-icon-search-hover {
+    width: 17px;
+    height: 17px;
+    background-position: -532px -32px;
+}
+
+.sprite-icon-technic {
+    width: 78px;
+    height: 62px;
+    background-position: -559px -32px;
+}
+
+.sprite-icon-tools {
+    width: 75px;
+    height: 61px;
+    background-position: -90px -104px;
+}
+
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -104px;
+}
+
+.sprite-icon-user-active {
+    width: 20px;
+    height: 18px;
+    background-position: -175px -104px;
+}
+
+.sprite-icon-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -205px -104px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -235px -104px;
+}
+
+.sprite-img-credit {
+    width: 465px;
+    height: 285px;
+    background-position: -175px -132px;
+}
+
+.sprite-img-delivery {
+    width: 468px;
+    height: 261px;
+    background-position: -657px -5px;
+}
+
+.sprite-img-garsntee {
+    width: 389px;
+    height: 283px;
+    background-position: -650px -276px;
+}
+
+.sprite-item-new {
+    width: 60px;
+    height: 59px;
+    background-position: -5px -276px;
+}
+
+.sprite-shadow {
+    width: 10px;
+    height: 279px;
+    background-position: -75px -276px;
+}
