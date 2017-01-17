@@ -19,3 +19,10 @@
     display: inline-block;
     vertical-align: top;
 }
+
+%hide-anchor-text {
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}

@@ -1,163 +1,3 @@
-//Topbar and its components
-.topbar {
-    min-height: 42px;
-    background: $topbar-bg;
-}
-
-.logo-link,
-.searchbar,
-.bookmark-link,
-.basket-link,
-.order-link {
-    float: left;
-}
-
-.logo-link {
-    display: block;
-    width: 220px;
-    padding: 9px 0;
-    font-size: 24px;
-    line-height: 1;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $logo-link-bg;
-    color: #fff;
-    &:hover {
-        background-color: $logo-link-bg-hover;
-    }
-    &:active {
-        background-color: $logo-link-bg-active;
-    }
-}
-
-.searchbar {
-    position: relative;
-    width: 270px;
-    background: transparent;
-    .icon-search {
-        position: absolute;
-        top: 12px;
-        left: 17px;
-        background-image: url($path-spritesheet);
-        background-repeat: no-repeat;
-        width: 17px;
-        height: 17px;
-        background-position: -446px -32px;
-    }
-    &:hover {
-        background: $topbar-bg-hover;
-        .icon-search {
-            width: 17px;
-            height: 17px;
-            background-position: -532px -32px;
-        }
-    }
-}
-
-.searchbar-control {
-    display: block;
-    width: 100%;
-    padding: 12px 30px 12px 49px;
-    font-family: $base-font-family;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: normal;
-    font-style: normal;
-    border: none;
-    background: transparent;
-    color: #fff;
-    @include placeholder-color(#fff);
-    &:focus {
-        outline: none;
-        background: #fff;
-        color: #000;
-    }
-    &:focus+.icon-search {
-        width: 17px;
-        height: 17px;
-        background-position: -505px -32px;
-    }
-}
-
-.bookmark-link,
-.basket-link,
-.order-link {
-    display: block;
-    width: 150px;
-    font-family: $base-font-family;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: normal;
-    font-style: normal;
-    color: #fff;
-    text-decoration: none;
-}
-
-.bookmark-link,
-.basket-link {
-    position: relative;
-    padding: 12px 20px 12px 0;
-    &:before {
-        content: " ";
-        position: absolute;
-        top: 12px;
-        left: 17px;
-        background-image: url($path-spritesheet);
-        background-repeat: no-repeat;
-    }
-    &:hover {
-        background: $topbar-bg-hover;
-    }
-    &:active {
-        background: $topbar-bg-active;
-    }
-}
-
-.bookmark-link {
-    padding-left: 45px;
-    &:before {
-        width: 14px;
-        height: 16px;
-        background-position: -86px -5px;
-    }
-    &:hover:before {
-        background-position: -134px -5px;
-    }
-    &:active:before {
-        background-position: -110px -5px;
-    }
-}
-
-.basket-link {
-    padding-left: 50px;
-    &:before {
-        width: 17px;
-        height: 16px;
-        background-position: -5px -5px;
-    }
-    &:hover:before {
-        background-position: -59px -5px;
-    }
-    &:active:before {
-        background-position: -32px -5px;
-    }
-}
-
-.order-link {
-    padding: 12px 10px;
-    background: #63a63e;
-    text-align: center;
-    &:hover {
-        background: #5fbb2d;
-    }
-    &:active {
-        background: #518534;
-        color: #aac39b;
-    }
-}
-
 //Navbar and its components
 .navbar {
     padding-top: 45px;
@@ -168,10 +8,6 @@
 .navbar-container {
     margin-bottom: 40px;
     @extend %clearfix;
-}
-
-.nav {
-    background: $nav-bg;
 }
 
 .page-heading,
@@ -203,10 +39,9 @@
     position: relative;
     padding: 9px;
     font-size: 21px;
-    line-height: 1;    
+    line-height: 1;
     color: #e9292a;
     border: 3px solid #fff;
-
     &:before {
         content: " ";
         position: absolute;
@@ -231,6 +66,7 @@
     font-size: 0;
     text-align: right;
 }
+
 .sign-link {
     display: inline-block;
     vertical-align: top;
@@ -242,15 +78,12 @@
     text-decoration: none;
     text-align: center;
     background: #fff;
-
     &:last-child {
         margin-right: 0;
     }
-
     &:hover {
         color: #ee3643;
     }
-
     &:active {
         color: #b2b2b2;
     }
@@ -259,11 +92,10 @@
 .sign-in-link {
     position: relative;
     padding-left: 48px;
-
     &:before {
         content: " ";
         position: absolute;
-        top: 10px; 
+        top: 10px;
         left: 15px;
         background-image: url($path-spritesheet);
         background-repeat: no-repeat;
@@ -271,26 +103,10 @@
         height: 17px;
         background-position: -505px -5px;
     }
-
     &:hover:before {
         background-position: -565px -5px;
     }
-
     &:active:before {
         background-position: -535px -5px;
     }
-}
-
-//
-.nav-list {
-    @extend %resetUl;
-}
-
-.nav-item {
-    @extend %inlineBlock;
-}
-
-.nav-link {
-    display: block;
-    color: #fff;
 }

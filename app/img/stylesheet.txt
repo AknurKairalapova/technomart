@@ -35,17 +35,7 @@
     background-position: -357px -5px;
 }
 
-.sprite-icon-fcb {
-    width: 10px;
-    height: 18px;
-    background-position: -426px -5px;
-}
 
-.sprite-icon-inst {
-    width: 17px;
-    height: 17px;
-    background-position: -446px -5px;
-}
 
 .sprite-icon-left {
     width: 22px;
@@ -151,11 +141,7 @@
     background-position: -205px -104px;
 }
 
-.sprite-icon-vk {
-    width: 20px;
-    height: 12px;
-    background-position: -235px -104px;
-}
+
 
 .sprite-img-credit {
     width: 465px;
