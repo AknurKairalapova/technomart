@@ -4,21 +4,110 @@
 }
 
 .offer-item {
+    position: relative;
     width: 300px;
     margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 22px;
+    &:after {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-image: url($path-spritesheet);
+        background-repeat: no-repeat;
+    }
+}
+.offer-item-new {
+    &:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-image: url($path-spritesheet);
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 59px;
+        background-position: -5px -276px;
+    }
 }
 .offer-item-materials {
     background: #f6b22d;
+    &:after {
+        top: 27px;
+        right: 42px;
+        width: 44px;
+        height: 65px;
+        background-position: -36px -32px;
+    }
 }
+
 .offer-item-tools {
     background: #4aafde;
+    &:after {
+        top: 33px;
+        right: 26px;
+        width: 75px;
+        height: 61px;
+        background-position: -90px -104px;
+    }
 }
+
 .offer-item-technic {
     background: #cc79d1;
+    &:after {
+        top: 30px;
+        right: 30px;
+        width: 78px;
+        height: 62px;
+        background-position: -559px -32px;
+    }
 }
+
 .offer-item-discount {
     background: #85d179;
+    &:after {
+        top: 26px;
+        right: 44px;
+        width: 59px;
+        height: 72px;
+        background-position: -357px -5px;
+    }
 }
+
 .offer-item-delivery {
     background: #f6b22d;
+    &:after {
+        top: 32px;
+        right: 30px;
+        width: 78px;
+        height: 63px;
+        background-position: -269px -5px;
+    }
+}
+
+.offer-title {
+    margin-bottom: 11px;
+    font-family: $font-family-cuprum-bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.offer-link {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background: rgba(80, 80, 80, .2);
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        background: rgba(80, 80, 80, .3);
+    }
+    &:active {
+        background: rgba(80, 80, 80, .4);
+    }
 }

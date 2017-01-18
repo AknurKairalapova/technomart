@@ -23,16 +23,8 @@
     background-position: -232px -5px;
 }
 
-.sprite-icon-delivery {
-    width: 78px;
-    height: 63px;
-    background-position: -269px -5px;
-}
-
 .sprite-icon-discount {
-    width: 59px;
-    height: 72px;
-    background-position: -357px -5px;
+    
 }
 
 
@@ -79,13 +71,6 @@
     background-position: -5px -32px;
 }
 
-.sprite-icon-materials {
-    width: 44px;
-    height: 65px;
-    background-position: -36px -32px;
-}
-
-
 
 .sprite-icon-right {
     width: 22px;
@@ -111,17 +96,6 @@
     background-position: -532px -32px;
 }
 
-.sprite-icon-technic {
-    width: 78px;
-    height: 62px;
-    background-position: -559px -32px;
-}
-
-.sprite-icon-tools {
-    width: 75px;
-    height: 61px;
-    background-position: -90px -104px;
-}
 
 .sprite-icon-user {
     width: 20px;
@@ -161,11 +135,6 @@
     background-position: -650px -276px;
 }
 
-.sprite-item-new {
-    width: 60px;
-    height: 59px;
-    background-position: -5px -276px;
-}
 
 .sprite-shadow {
     width: 10px;
