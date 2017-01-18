@@ -7,7 +7,7 @@
 }
 
 .nav-list, .nav-bottom,
-.category-links, .social-links {
+.category-links, .social-links, .company-list {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -86,6 +86,8 @@
 }
 
 .btn {
+  display: inline-block;
+  vertical-align: middle;
   padding: 10px 30px;
   font-size: 14px;
   line-height: 18px;
@@ -941,13 +943,75 @@ body {
   background-color: #f2f6f8;
 }
 
+.company {
+  padding: 80px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+}
+.company p {
+  margin: 0;
+}
+
 .company-info {
   float: left;
   width: 540px;
   margin-right: 100px;
 }
+.company-info .company-desc {
+  margin-bottom: 30px;
+}
+.company-info .btn {
+  width: 220px;
+}
 
 .contacts {
   float: left;
   width: 300px;
+}
+.contacts .btn {
+  width: 100%;
+}
+.contacts .contacts-desc {
+  margin-bottom: 27px;
+}
+
+.company-title,
+.contacts-title {
+  margin: 0 0 30px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.company-list {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.company-list li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1;
+}
+.company-list li:last-child {
+  margin-bottom: 0;
+}
+.company-list li:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  top: 6px;
+  left: 0;
+  border-bottom: 2px solid #fb565a;
+  z-index: 1;
+}
+
+.map {
+  width: 300px;
+  height: 160px;
+  margin-bottom: 40px;
+  background: url("/pic/map.jpg") no-repeat;
 }

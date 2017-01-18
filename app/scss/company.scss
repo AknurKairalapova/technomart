@@ -1,11 +1,73 @@
+.company {
+    padding: 80px;
+    font-family: $font-family-cuprum-bold;
+    p {
+        margin: 0;
+    }
+}
 
 .company-info {
     float: left;
     width: 540px;
     margin-right: 100px;
+    .company-desc {
+        margin-bottom: 30px;
+    }
+    .btn {
+        width: 220px;
+    }
 }
 
 .contacts {
     float: left;
     width: 300px;
+    .btn {
+        width: 100%;
+    }
+    .contacts-desc {
+        margin-bottom: 27px;
+    }
+}
+
+.company-title,
+.contacts-title {
+    margin: 0 0 30px;
+    font-family: $font-family-cuprum-bold;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.company-list {
+    @extend %resetUl;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    li {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 35px;
+        font-family: $font-family-cuprum-bold;
+        font-size: 17px;
+        line-height: 1;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 25px;
+            top: 6px;
+            left: 0;
+            border-bottom: 2px solid #fb565a;
+            z-index: 1;
+        }
+    }
+}
+
+.map {
+    width: 300px;
+    height: 160px;
+    margin-bottom: 40px;
+    background: url('/pic/map.jpg') no-repeat;
 }
