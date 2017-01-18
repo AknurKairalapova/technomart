@@ -1,3 +1,51 @@
 .services {
+    padding: 70px 0;
     background-color: $services-bg;
+    font-family: $font-family-cuprum-bold;
+    p {
+        margin: 0;
+    }
+}
+.services-desc {
+    margin-bottom: 70px;
+}
+.services-title {
+    margin: 0 0 30px;
+    font-family: $font-family-cuprum-bold;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.services-list {
+    @extend %resetUl;
+    @extend %inlineBlock;
+    width: 240px;
+    margin-right: 75px;
+}
+.services-item {
+    &.active {
+        .services-link {
+            color: #32425c;
+            background: #fff;
+        }
+    }
+    &:last-child {
+        .services-link {
+            border-bottom: none;
+        }
+    }
+}
+.services-link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 21px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #32425c;
+    border-bottom: 1px solid #293449;
+}
+.services-item-desc {
+    @extend %inlineBlock;
 }

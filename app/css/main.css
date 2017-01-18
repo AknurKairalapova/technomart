@@ -7,14 +7,14 @@
 }
 
 .nav-list, .nav-bottom,
-.category-links, .social-links, .company-list {
+.category-links, .social-links, .services-list, .company-list {
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
 .nav-bottom-item,
-.category-item, .social-item, .catalog-item {
+.category-item, .social-item, .catalog-item, .services-list, .services-item-desc {
   display: inline-block;
   vertical-align: top;
 }
@@ -940,7 +940,49 @@ body {
 }
 
 .services {
+  padding: 70px 0;
   background-color: #f2f6f8;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+}
+.services p {
+  margin: 0;
+}
+
+.services-desc {
+  margin-bottom: 70px;
+}
+
+.services-title {
+  margin: 0 0 30px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.services-list {
+  width: 240px;
+  margin-right: 75px;
+}
+
+.services-item.active .services-link {
+  color: #32425c;
+  background: #fff;
+}
+.services-item:last-child .services-link {
+  border-bottom: none;
+}
+
+.services-link {
+  display: block;
+  padding: 15px 20px;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+  background: #32425c;
+  border-bottom: 1px solid #293449;
 }
 
 .company {
