@@ -4,17 +4,22 @@
 
 .nav-list {
     @extend %resetUl;
-    padding: 0 19px;
-    display: table;
-    width: 100%;
     font-size: 0;
     line-height: 1;
-    border-bottom: 5px solid $nav-border-bottom-color;
 }
 
 .nav-item {
-    // @extend %inlineBlock;
-    display: table-cell;
+    @extend %inlineBlock;
+    &:first-child {
+        .nav-link {
+            padding-left: 55px;
+        }
+    }
+    &:last-child {
+        .nav-link {
+            padding-right: 55px;
+        }
+    }
 }
 
 .nav-link {
@@ -23,12 +28,15 @@
     font-size: 17px;
     line-height: 17px;
     color: #fff;
-    text-decoration: none;    
+    text-decoration: none;
+    border-bottom: 5px solid $nav-border-bottom-color;
+
     &:hover {
         background: $nav-link-hover;
     }
     &:active {
         background: $nav-link-active;
         color: #868c95;
+        border-bottom: 5px solid $nav-link-active;
     }
 }

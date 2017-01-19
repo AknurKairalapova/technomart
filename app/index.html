@@ -162,26 +162,33 @@
                 <p>Хороший Интернет-магазин отличается от плохого не только ценами!</p>
                 <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
-            <ul class="services-list">
-                <li class="services-item active"><a href="#" class="services-link" data-target="delivery">Доставка</a></li>
-                <li class="services-item"><a href="#" class="services-link" data-target="garantee">Гарантия</a></li>
-                <li class="services-item"><a href="#" class="services-link" data-target="credit">Кредит</a></li>
-            </ul>
-            <div id="delivery" class="services-item-desc services-item-delivery active">
-                <h2 class="services-item-title">доставка</h2>
-                <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                <p class="services-item-text">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            </div>
-            <div id="garantee" class="services-item-desc services-item-garantee">
-                <h2 class="services-item-title">гарантия</h2>
-                <p class="services-item-text">Если купленный у нас товар поламается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-                <p class="services-item-text">Дом уж восстановите как-нибудь сами.</p>
-            </div>
-            <div id="credit" class="services-item-desc services-item-credit">
-                <h2 class="services-item-title">кредит</h2>
-                <p class="services-item-text">Залезть в долговую яму стало проще!</p>
-                <p class="services-item-text">Кредитные консультанты придут вам на помощь.</p>
-                <a href="#" class="btn btn-primary">отправить заявку</a>
+            <div class="service-items">
+                <input type="radio" id="service-delivery" name="toggle" checked>
+                <input type="radio" id="service-garantee" name="toggle">
+                <input type="radio" id="service-credit" name="toggle">
+
+                <ul class="services-list">
+                    <li class="services-list-item services-list-item-delivery"><label for="service-delivery" class="services-link">Доставка</label></li>
+                    <li class="services-list-item services-list-item-garantee"><label for="service-garantee" class="services-link">Гарантия</label></li>
+                    <li class="services-list-item services-list-item-credit"><label for="service-credit" class="services-link">Кредит</label></li>
+                </ul>
+
+                <div class="services-item services-item-delivery">
+                    <h2 class="services-item-title">доставка</h2>
+                    <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                    <p class="services-item-text">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+                </div>
+                <div class="services-item services-item-garantee">
+                    <h2 class="services-item-title">гарантия</h2>
+                    <p class="services-item-text">Если купленный у нас товар поламается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                    <p class="services-item-text">Дом уж восстановите как-нибудь сами.</p>
+                </div>
+                <div class="services-item services-item-credit">
+                    <h2 class="services-item-title">кредит</h2>
+                    <p class="services-item-text">Залезть в долговую яму стало проще!</p>
+                    <p class="services-item-text">Кредитные консультанты придут вам на помощь.</p>
+                    <a href="#" class="btn btn-primary">отправить заявку</a>
+                </div>
             </div>
         </div>
     </div>

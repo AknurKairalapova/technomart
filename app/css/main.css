@@ -13,8 +13,10 @@
   list-style: none;
 }
 
-.nav-bottom-item,
-.category-item, .social-item, .catalog-item, .services-list, .services-item-desc.active {
+.nav-item, .nav-bottom-item,
+.category-item, .social-item, .catalog-item, .services-list, #service-delivery:checked ~ .services-item-delivery,
+#service-garantee:checked ~ .services-item-garantee,
+#service-credit:checked ~ .services-item-credit {
   display: inline-block;
   vertical-align: top;
 }
@@ -424,16 +426,15 @@ body {
 }
 
 .nav-list {
-  padding: 0 19px;
-  display: table;
-  width: 100%;
   font-size: 0;
   line-height: 1;
-  border-bottom: 5px solid #293449;
 }
 
-.nav-item {
-  display: table-cell;
+.nav-item:first-child .nav-link {
+  padding-left: 55px;
+}
+.nav-item:last-child .nav-link {
+  padding-right: 55px;
 }
 
 .nav-link {
@@ -443,6 +444,7 @@ body {
   line-height: 17px;
   color: #fff;
   text-decoration: none;
+  border-bottom: 5px solid #293449;
 }
 .nav-link:hover {
   background: #293449;
@@ -450,6 +452,7 @@ body {
 .nav-link:active {
   background: #1d2739;
   color: #868c95;
+  border-bottom: 5px solid #1d2739;
 }
 
 .navbar-bottom {
@@ -615,6 +618,13 @@ body {
 .feedback-link {
   display: block;
   color: #ffd180;
+  text-decoration: none;
+}
+.feedback-link:hover {
+  text-decoration: underline;
+}
+.feedback-link:active {
+  color: #ee3643;
   text-decoration: none;
 }
 
@@ -963,6 +973,10 @@ body {
   text-transform: uppercase;
 }
 
+.service-items input[type=radio] {
+  display: none;
+}
+
 .services-list {
   position: relative;
   width: 240px;
@@ -980,13 +994,7 @@ body {
   background-position: -75px -276px;
 }
 
-.services-item.active .services-link,
-.services-item.active .services-link:hover,
-.services-item.active .services-link:active {
-  color: #32425c;
-  background: #fff;
-}
-.services-item:last-child .services-link {
+.services-list-item:last-child .services-link {
   border-bottom: none;
 }
 
@@ -1004,12 +1012,25 @@ body {
   background: #293449;
 }
 
-.services-item-desc {
+#service-delivery:checked ~ .services-list .services-list-item-delivery .services-link,
+#service-delivery:checked ~ .services-list .services-list-item-delivery .services-link:hover,
+#service-delivery:checked ~ .services-list .services-list-item-delivery .services-link:active,
+#service-garantee:checked ~ .services-list .services-list-item-garantee .services-link,
+#service-garantee:checked ~ .services-list .services-list-item-garantee .services-link:hover,
+#service-garantee:checked ~ .services-list .services-list-item-garantee .services-link:active,
+#service-credit:checked ~ .services-list .services-list-item-credit .services-link,
+#service-credit:checked ~ .services-list .services-list-item-credit .services-link:hover,
+#service-credit:checked ~ .services-list .services-list-item-credit .services-link:active {
+  color: #32425c;
+  background: #fff;
+}
+
+.services-item {
   display: none;
   width: calc(100% - 320px);
   position: relative;
 }
-.services-item-desc:after {
+.services-item:after {
   content: " ";
   position: absolute;
   top: 0;
