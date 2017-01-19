@@ -1,8 +1,8 @@
-.center-container:before, .navbar-container:before, .catalog-preview-header:before, .center-container:after, .navbar-container:after, .catalog-preview-header:after {
+.center-container:before, .navbar-container:before, .offer-preview:before, .catalog-preview-header:before, .center-container:after, .navbar-container:after, .offer-preview:after, .catalog-preview-header:after {
   content: " ";
   display: table;
 }
-.center-container:after, .navbar-container:after, .catalog-preview-header:after {
+.center-container:after, .navbar-container:after, .offer-preview:after, .catalog-preview-header:after {
   clear: both;
 }
 
@@ -635,6 +635,7 @@ body {
 
 .offer-item {
   position: relative;
+  float: left;
   width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -646,6 +647,9 @@ body {
   display: block;
   background-image: url("/img/spritesheet.png");
   background-repeat: no-repeat;
+}
+.offer-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .offer-item-new:before {
@@ -659,6 +663,129 @@ body {
   width: 60px;
   height: 59px;
   background-position: -5px -276px;
+}
+
+.slider {
+  position: relative;
+  width: 620px;
+  padding: 0;
+  background: #f6b22d;
+}
+.slider input[type=radio] {
+  display: none;
+}
+
+.slide {
+  display: none;
+  min-height: 266px;
+  padding: 22px;
+}
+
+#slide-perforators:checked ~ .slide-perforators,
+#slide-drills:checked ~ .slide-drills {
+  display: block;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin-top: -20px;
+}
+
+.slide-prev,
+.slide-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+}
+.slide-prev:hover,
+.slide-next:hover {
+  cursor: pointer;
+}
+
+.slide-prev {
+  left: 20px;
+  background-position: -473px -5px;
+}
+
+.slide-next {
+  right: 20px;
+  background-position: -119px -32px;
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  width: 100px;
+  height: 12px;
+  margin-left: -50px;
+  font-size: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider-indicator {
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-indicator:last-child {
+  margin-right: 0;
+}
+
+#slide-perforators:checked ~ .slider-indicators label[for="slide-perforators"],
+#slide-drills:checked ~ .slider-indicators label[for="slide-drills"] {
+  background: #ee3643;
+}
+
+.slide-perforators {
+  background: url("/pic/perforators.jpg") no-repeat;
+}
+
+.slide-drills {
+  background: url("/pic/drills.jpg") no-repeat;
+}
+
+.slide-title {
+  margin: 0 0 10px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slide-text {
+  margin: 0 0 114px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.slide-link {
+  min-width: 195px;
+}
+
+.offer-item-discount,
+.offer-item-delivery {
+  float: right;
+  margin-right: 0;
 }
 
 .offer-item-materials {

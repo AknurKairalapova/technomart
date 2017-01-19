@@ -66,19 +66,33 @@
                 <div class="offer-title">Техника</div>
                 <a href="#" class="offer-link">для стройки</a>
             </div>
+
             <div class="offer-item slider">
-                <div class="slider-links">
-                    <a href="#" class="slider-link slider-link-prev"></a>
-                    <a href="#" class="slider-link slider-link-next"></a>
+                <input type="radio" id="slide-perforators" name="toggle1" checked>
+                <input type="radio" id="slide-drills" name="toggle1">
+
+                <div class="slider-nav">
+                    <label for="slide-perforators" class="slide-prev"></label>
+                    <label for="slide-drills" class="slide-next"></label>
                 </div>
-                <div class="slider-item slider-item-perforators">
-                    <div class="slider-header">
-                        <div class="slider-title">Перфораторы</div>
-                        <p>Настоящие мужские игрушки</p>
-                    </div>
-                    <a href="#" class="btn btn-primary">Открыть каталог</a>
+
+                <div class="slider-indicators">
+                    <label for="slide-perforators" class="slider-indicator"></label>
+                    <label for="slide-drills" class="slider-indicator"></label>
+                </div>
+
+                <div class="slide slide-perforators">
+                    <div class="slide-title">Перфораторы</div>
+                    <p class="slide-text">Настоящие мужские игрушки</p>
+                    <a href="#" class="slide-link btn btn-primary">Открыть каталог</a>
+                </div>
+                <div class="slide slide-drills">
+                    <div class="slide-title">дрели</div>
+                    <p class="slide-text">Соседям на радость!</p>
+                    <a href="#" class="slide-link btn btn-primary">Открыть каталог</a>
                 </div>
             </div>
+
             <div class="offer-item offer-item-discount">
                 <div class="offer-title">Скидки 50%</div>
                 <a href="#" class="offer-link">на 350 товаров</a>

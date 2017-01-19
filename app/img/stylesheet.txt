@@ -30,9 +30,7 @@
 
 
 .sprite-icon-left {
-    width: 22px;
-    height: 40px;
-    background-position: -473px -5px;
+   
 }
 
 .sprite-icon-login {
@@ -73,9 +71,7 @@
 
 
 .sprite-icon-right {
-    width: 22px;
-    height: 40px;
-    background-position: -119px -32px;
+    
 }
 
 .sprite-icon-search {
@@ -114,18 +110,3 @@
     height: 18px;
     background-position: -205px -104px;
 }
-
-
-
-.sprite-img-credit {
-    
-}
-
-.sprite-img-delivery {
-    
-}
-
-.sprite-img-garsntee {
-    
-}
-
