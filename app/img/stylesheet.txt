@@ -118,26 +118,14 @@
 
 
 .sprite-img-credit {
-    width: 465px;
-    height: 285px;
-    background-position: -175px -132px;
+    
 }
 
 .sprite-img-delivery {
-    width: 468px;
-    height: 261px;
-    background-position: -657px -5px;
+    
 }
 
 .sprite-img-garsntee {
-    width: 389px;
-    height: 283px;
-    background-position: -650px -276px;
+    
 }
 
-
-.sprite-shadow {
-    width: 10px;
-    height: 279px;
-    background-position: -75px -276px;
-}

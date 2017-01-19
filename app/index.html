@@ -163,14 +163,25 @@
                 <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
             <ul class="services-list">
-                <li class="services-item active"><a href="#" class="services-link">Доставка</a></li>
-                <li class="services-item"><a href="#" class="services-link">Гарантия</a></li>
-                <li class="services-item"><a href="#" class="services-link">Кредит</a></li>
+                <li class="services-item active"><a href="#" class="services-link" data-target="delivery">Доставка</a></li>
+                <li class="services-item"><a href="#" class="services-link" data-target="garantee">Гарантия</a></li>
+                <li class="services-item"><a href="#" class="services-link" data-target="credit">Кредит</a></li>
             </ul>
-            <div class="services-item-desc">
-                <h2 class="services-title">доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            <div id="delivery" class="services-item-desc services-item-delivery active">
+                <h2 class="services-item-title">доставка</h2>
+                <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                <p class="services-item-text">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+            </div>
+            <div id="garantee" class="services-item-desc services-item-garantee">
+                <h2 class="services-item-title">гарантия</h2>
+                <p class="services-item-text">Если купленный у нас товар поламается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                <p class="services-item-text">Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div id="credit" class="services-item-desc services-item-credit">
+                <h2 class="services-item-title">кредит</h2>
+                <p class="services-item-text">Залезть в долговую яму стало проще!</p>
+                <p class="services-item-text">Кредитные консультанты придут вам на помощь.</p>
+                <a href="#" class="btn btn-primary">отправить заявку</a>
             </div>
         </div>
     </div>

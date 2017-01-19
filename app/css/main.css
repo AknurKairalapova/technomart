@@ -14,7 +14,7 @@
 }
 
 .nav-bottom-item,
-.category-item, .social-item, .catalog-item, .services-list, .services-item-desc {
+.category-item, .social-item, .catalog-item, .services-list, .services-item-desc.active {
   display: inline-block;
   vertical-align: top;
 }
@@ -940,9 +940,10 @@ body {
 }
 
 .services {
-  padding: 70px 0;
+  padding: 70px 0 100px;
   background-color: #f2f6f8;
   font-family: "Cuprum Bold", Arial, sans-serif;
+  overflow: hidden;
 }
 .services p {
   margin: 0;
@@ -952,7 +953,8 @@ body {
   margin-bottom: 70px;
 }
 
-.services-title {
+.services-title,
+.services-item-title {
   margin: 0 0 30px;
   font-family: "Cuprum Bold", Arial, sans-serif;
   font-size: 30px;
@@ -962,11 +964,25 @@ body {
 }
 
 .services-list {
+  position: relative;
   width: 240px;
   margin-right: 75px;
 }
+.services-list:after {
+  content: " ";
+  position: absolute;
+  top: -48px;
+  right: 0;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  background-position: -75px -276px;
+}
 
-.services-item.active .services-link {
+.services-item.active .services-link,
+.services-item.active .services-link:hover,
+.services-item.active .services-link:active {
   color: #32425c;
   background: #fff;
 }
@@ -983,6 +999,63 @@ body {
   color: #fff;
   background: #32425c;
   border-bottom: 1px solid #293449;
+}
+.services-link:hover, .services-link:active {
+  background: #293449;
+}
+
+.services-item-desc {
+  display: none;
+  width: calc(100% - 320px);
+  position: relative;
+}
+.services-item-desc:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.services-item-delivery:after {
+  width: 468px;
+  height: 261px;
+  background-position: -657px -5px;
+}
+.services-item-delivery .services-item-text {
+  max-width: 290px;
+}
+
+.services-item-garantee:after {
+  width: 389px;
+  height: 283px;
+  background-position: -650px -276px;
+}
+.services-item-garantee .services-item-text {
+  max-width: 380px;
+}
+
+.services-item-credit:after {
+  width: 465px;
+  height: 285px;
+  background-position: -175px -132px;
+}
+.services-item-credit .services-item-text:last-of-type {
+  margin-bottom: 25px;
+}
+.services-item-credit .btn {
+  min-width: 195px;
+}
+
+.services-item-title {
+  color: #32425c;
+}
+
+.services-item-text {
+  position: relative;
+  z-index: 10;
 }
 
 .company {

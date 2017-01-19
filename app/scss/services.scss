@@ -1,15 +1,19 @@
 .services {
-    padding: 70px 0;
+    padding: 70px 0 100px;
     background-color: $services-bg;
     font-family: $font-family-cuprum-bold;
+    overflow: hidden;
     p {
         margin: 0;
     }
 }
+
 .services-desc {
     margin-bottom: 70px;
 }
-.services-title {
+
+.services-title,
+.services-item-title {
     margin: 0 0 30px;
     font-family: $font-family-cuprum-bold;
     font-size: 30px;
@@ -17,15 +21,31 @@
     font-weight: normal;
     text-transform: uppercase;
 }
+
 .services-list {
+    position: relative;
     @extend %resetUl;
     @extend %inlineBlock;
     width: 240px;
     margin-right: 75px;
+    &:after {
+        content: " ";
+        position: absolute;
+        top: -48px;
+        right: 0;
+        background-image: url($path-spritesheet);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 279px;
+        background-position: -75px -276px;
+    }
 }
+
 .services-item {
     &.active {
-        .services-link {
+        .services-link,
+        .services-link:hover,
+        .services-link:active {
             color: #32425c;
             background: #fff;
         }
@@ -36,6 +56,7 @@
         }
     }
 }
+
 .services-link {
     display: block;
     padding: 15px 20px;
@@ -45,7 +66,73 @@
     color: #fff;
     background: #32425c;
     border-bottom: 1px solid #293449;
+    &:hover,
+    &:active {
+        background: #293449;
+    }
 }
+
 .services-item-desc {
-    @extend %inlineBlock;
+    display: none;
+    width: calc(100% - #{$services-item-desc-indent});
+    position: relative;
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url($path-spritesheet);
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+    &.active {
+        @extend %inlineBlock;
+    }
+}
+
+.services-item-delivery {
+    &:after {
+        width: 468px;
+        height: 261px;
+        background-position: -657px -5px;
+    }
+    .services-item-text {
+        max-width: 290px;
+    }
+}
+
+.services-item-garantee {
+    &:after {
+        width: 389px;
+        height: 283px;
+        background-position: -650px -276px;
+    }
+    .services-item-text {
+        max-width: 380px;
+    }
+}
+
+.services-item-credit {
+    &:after {
+        width: 465px;
+        height: 285px;
+        background-position: -175px -132px;
+    }
+    .services-item-text {
+        &:last-of-type {
+            margin-bottom: 25px;
+        }
+    }
+    .btn {
+        min-width: 195px;
+    }
+}
+
+.services-item-title {
+    color: #32425c;
+}
+
+.services-item-text {
+    position: relative;
+    z-index: 10;
 }
