@@ -1,6 +1,4 @@
-//Topbar and its components
 .topbar {
-    min-height: 42px;
     background: $topbar-bg;
 }
 
@@ -14,7 +12,7 @@
 
 .logo-link {
     display: block;
-    width: 220px;
+    width: $logo-width;
     padding: 9px 0;
     font-size: 24px;
     line-height: 1;
@@ -35,7 +33,7 @@
 
 .searchbar {
     position: relative;
-    width: 270px;
+    width: $searchbar-width;
     background: transparent;
     .icon-search {
         position: absolute;
@@ -75,7 +73,7 @@
         background: #fff;
         color: #000;
     }
-    &:focus+.icon-search {
+    &:focus + .icon-search {
         width: 17px;
         height: 17px;
         background-position: -505px -32px;
@@ -86,7 +84,7 @@
 .basket-link,
 .order-link {
     display: block;
-    width: 150px;
+    width: $topbar-links-width;
     font-family: $base-font-family;
     font-size: 17px;
     line-height: 18px;
@@ -148,13 +146,13 @@
 
 .order-link {
     padding: 12px 10px;
-    background: #63a63e;
+    background: $primary-green-bg;
     text-align: center;
     &:hover {
-        background: #5fbb2d;
+        background: $primary-green-bg-hover;
     }
     &:active {
-        background: #518534;
+        background: $primary-green-bg-active;
         color: #aac39b;
     }
 }

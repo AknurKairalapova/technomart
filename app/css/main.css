@@ -21,6 +21,11 @@
   vertical-align: top;
 }
 
+.btn, .sign-link, .catalog-preview-manufactures .catalog-item-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .social-link {
   border: 0;
   font: 0/0 a;
@@ -71,7 +76,7 @@
   font-style: normal;
 }
 .icon {
-  background-image: url(/img/spritesheet.png);
+  background-image: url("/img/spritesheet.png");
   background-repeat: no-repeat;
 }
 
@@ -88,8 +93,6 @@
 }
 
 .btn {
-  display: inline-block;
-  vertical-align: middle;
   padding: 10px 30px;
   font-size: 14px;
   line-height: 18px;
@@ -132,119 +135,7 @@ body {
   padding: 0 10px;
 }
 
-.navbar {
-  padding-top: 45px;
-  padding-bottom: 60px;
-  background: #f1f5f7;
-}
-
-.navbar-container {
-  margin-bottom: 40px;
-}
-
-.page-heading,
-.contacts-info,
-.account {
-  float: left;
-}
-
-.page-heading {
-  width: 320px;
-}
-
-.contacts-info {
-  width: 270px;
-  margin-right: 50px;
-  text-align: center;
-}
-
-.page-title {
-  width: 200px;
-  margin: 0 auto;
-  font-family: "Cuprum Italic", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ee3643;
-}
-
-.contacts-info-tel {
-  position: relative;
-  padding: 9px;
-  font-size: 21px;
-  line-height: 1;
-  color: #e9292a;
-  border: 3px solid #fff;
-}
-.contacts-info-tel:before {
-  content: " ";
-  position: absolute;
-  top: 9px;
-  left: 13px;
-  background-image: url("/img/spritesheet.png");
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 19px;
-  background-position: -90px -32px;
-}
-
-.contacts-info-address {
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
-}
-
-.account {
-  width: 300px;
-  font-size: 0;
-  text-align: right;
-}
-
-.sign-link {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
-  padding: 9px 25px;
-  font-size: 21px;
-  line-height: 1;
-  color: #000;
-  text-decoration: none;
-  text-align: center;
-  background: #fff;
-}
-.sign-link:last-child {
-  margin-right: 0;
-}
-.sign-link:hover {
-  color: #ee3643;
-}
-.sign-link:active {
-  color: #b2b2b2;
-}
-
-.sign-in-link {
-  position: relative;
-  padding-left: 48px;
-}
-.sign-in-link:before {
-  content: " ";
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  background-image: url("/img/spritesheet.png");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 17px;
-  background-position: -505px -5px;
-}
-.sign-in-link:hover:before {
-  background-position: -565px -5px;
-}
-.sign-in-link:active:before {
-  background-position: -535px -5px;
-}
-
 .topbar {
-  min-height: 42px;
   background: #293449;
 }
 
@@ -421,6 +312,115 @@ body {
   color: #aac39b;
 }
 
+.navbar {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background: #f1f5f7;
+}
+
+.navbar-container {
+  margin-bottom: 40px;
+}
+
+.page-heading,
+.contacts-info,
+.account {
+  float: left;
+}
+
+.page-heading {
+  width: 320px;
+}
+
+.contacts-info {
+  width: 270px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.page-title {
+  width: 200px;
+  margin: 0 auto;
+  font-family: "Cuprum Italic", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.contacts-info-tel {
+  position: relative;
+  padding: 9px;
+  font-size: 21px;
+  line-height: 1;
+  color: #e9292a;
+  border: 3px solid #fff;
+}
+.contacts-info-tel:before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  left: 13px;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  background-position: -90px -32px;
+}
+
+.contacts-info-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.account {
+  width: 300px;
+  font-size: 0;
+  text-align: right;
+}
+
+.sign-link {
+  margin-right: 10px;
+  padding: 9px 25px;
+  font-size: 21px;
+  line-height: 1;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+}
+.sign-link:last-child {
+  margin-right: 0;
+}
+.sign-link:hover {
+  color: #ee3643;
+}
+.sign-link:active {
+  color: #b2b2b2;
+}
+
+.sign-in-link {
+  position: relative;
+  padding-left: 48px;
+}
+.sign-in-link:before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 17px;
+  background-position: -505px -5px;
+}
+.sign-in-link:hover:before {
+  background-position: -565px -5px;
+}
+.sign-in-link:active:before {
+  background-position: -535px -5px;
+}
+
 .nav {
   background: #32425c;
 }
@@ -470,7 +470,6 @@ body {
   padding-bottom: 16px;
   font-size: 30px;
   line-height: 30px;
-  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .navbar-bottom-nav {
@@ -997,7 +996,7 @@ body {
   border-color: transparent transparent transparent #ee3643;
 }
 
-.catalog-item-buy {
+.catalog-link-buy {
   position: relative;
   display: block;
   width: 135px;
@@ -1013,7 +1012,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.catalog-item-buy:before {
+.catalog-link-buy:before {
   content: " ";
   position: absolute;
   top: 7px;
@@ -1024,21 +1023,21 @@ body {
   background-repeat: no-repeat;
   background-position: -5px -5px;
 }
-.catalog-item-buy:hover {
+.catalog-link-buy:hover {
   background: #5fbb2d;
 }
-.catalog-item-buy:active {
+.catalog-link-buy:active {
   background: #518534;
   border-bottom-color: #518534;
 }
-.catalog-item-buy:hover:before {
+.catalog-link-buy:hover:before {
   background-position: -59px -5px;
 }
-.catalog-item-buy:active:before {
+.catalog-link-buy:active:before {
   background-position: -59px -5px;
 }
 
-.catalog-item-bookmark {
+.catalog-link-bookmark {
   position: relative;
   display: block;
   width: 135px;
@@ -1054,10 +1053,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.catalog-item-bookmark:hover {
+.catalog-link-bookmark:hover {
   border-color: #32425c;
 }
-.catalog-item-bookmark:active {
+.catalog-link-bookmark:active {
   color: #c1c6ce;
   border-color: #c1c6ce;
 }
@@ -1070,8 +1069,6 @@ body {
   opacity: .3;
 }
 .catalog-preview-manufactures .catalog-item-img {
-  display: inline-block;
-  vertical-align: middle;
   width: auto;
   margin: 0 auto;
 }

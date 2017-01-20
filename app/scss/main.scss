@@ -10,6 +10,9 @@
 // ========================================
 @import "fonts.scss";
 
+// ========================================
+//    Components, Controls
+// ========================================
 @import "icons.scss";
 @import "buttons.scss";
 
@@ -18,13 +21,14 @@
 // ========================================
 @import "core.scss";
 
-@import "page-header.scss";
+//Page components
 @import "topbar.scss";
+@import "page-header.scss";
 @import "nav.scss";
 @import "page-footer.scss";
 
 // ========================================
-//    Pages
+//    Page sections
 // ========================================
 @import "offer-preview.scss";
 @import "catalog-preview.scss";

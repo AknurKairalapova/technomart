@@ -7,7 +7,7 @@
 .offer-item {
     position: relative;
     float: left;
-    width: 300px;
+    width: $offer-item-width;
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 22px;
@@ -41,9 +41,9 @@
 //Slider
 .slider {
     position: relative;
-    width: 620px;
+    width: $slider-width;
     padding: 0;
-    background: #f6b22d;
+    background: $brand-orange-color;
     input[type=radio] {
         display: none;
     }
@@ -51,12 +51,12 @@
 
 .slide {
     display: none;
-    min-height: 266px;
+    min-height: $slide-min-height;
     padding: 22px;
 }
 
-#slide-perforators:checked ~ .slide-perforators,
-#slide-drills:checked ~ .slide-drills {
+#slide-perforators:checked~.slide-perforators,
+#slide-drills:checked~.slide-drills {
     display: block;
 }
 
@@ -68,11 +68,11 @@
     height: 40px;
     margin-top: -20px;
 }
+
 .slide-prev,
 .slide-next {
     position: absolute;
     top: 50%;
-    
     display: block;
     width: 22px;
     height: 40px;
@@ -82,11 +82,13 @@
     &:hover {
         cursor: pointer;
     }
-} 
+}
+
 .slide-prev {
     left: 20px;
     background-position: -473px -5px;
 }
+
 .slide-next {
     right: 20px;
     background-position: -119px -32px;
@@ -119,24 +121,28 @@
     }
 }
 
-#slide-perforators:checked ~ .slider-indicators label[for="slide-perforators"],
-#slide-drills:checked ~ .slider-indicators label[for="slide-drills"] {
-    background: #ee3643;
+#slide-perforators:checked~.slider-indicators label[for="slide-perforators"],
+#slide-drills:checked~.slider-indicators label[for="slide-drills"] {
+    background: $primary-color;
 }
+
 .slide-perforators {
     background: url("/pic/perforators.jpg") no-repeat;
 }
+
 .slide-drills {
     background: url("/pic/drills.jpg") no-repeat;
 }
+
 .slide-title {
     margin: 0 0 10px;
     font-family: $font-family-cuprum-bold;
     font-size: 36px;
     line-height: 1;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
 }
+
 .slide-text {
     margin: 0 0 114px;
     font-family: $font-family-ptsans;
@@ -144,11 +150,11 @@
     line-height: 24px;
     color: #fff;
 }
+
 .slide-link {
     min-width: 195px;
 }
 
-//
 .offer-item-discount,
 .offer-item-delivery {
     float: right;
@@ -156,7 +162,7 @@
 }
 
 .offer-item-materials {
-    background: #f6b22d;
+    background: $brand-orange-color;
     &:after {
         top: 27px;
         right: 42px;
@@ -167,7 +173,7 @@
 }
 
 .offer-item-tools {
-    background: #4aafde;
+    background: $brand-blue-color;
     &:after {
         top: 33px;
         right: 26px;
@@ -178,7 +184,7 @@
 }
 
 .offer-item-technic {
-    background: #cc79d1;
+    background: $brand-purple-color;
     &:after {
         top: 30px;
         right: 30px;
@@ -189,7 +195,7 @@
 }
 
 .offer-item-discount {
-    background: #85d179;
+    background: $brand-green-color;
     &:after {
         top: 26px;
         right: 44px;
@@ -200,7 +206,7 @@
 }
 
 .offer-item-delivery {
-    background: #f6b22d;
+    background: $brand-orange-color;
     &:after {
         top: 32px;
         right: 30px;

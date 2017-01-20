@@ -1,22 +1,37 @@
 // ========================================
 //    Color scheme
 // ========================================
+//Base colors
+$primary-color: #ee3643;
+$primary-color-hover: #ca2c37;
+$primary-color-active: #ba2732;
+$dark-color: #293449;
+$brand-blue-color: #4aafde;
+$brand-orange-color: #f6b22d;
+$brand-green-color: #85d179;
+$brand-purple-color: #cc79d1;
+$primary-green-bg: #63a63e;
+$primary-green-bg-hover: #5fbb2d;
+$primary-green-bg-active: #518534;
+
+//Components color
 $bg-color: #fff;
-$topbar-bg: #293449;
+$topbar-bg: $dark-color;
 $topbar-bg-hover: #212a3a;
 $topbar-bg-active: #161d29;
 $navbar-bg: #f1f5f7;
+$navbar-bottom-bg: #32425c;
 $nav-bg: #32425c;
-$navbar-bottom-bg: $nav-bg;
-$nav-border-bottom-color: #293449;
-$nav-link-hover: #293449;
+$nav-border-bottom-color: $dark-color;
+$nav-link-hover: $dark-color;
 $nav-link-active: #1d2739;
-$page-footer-container-bg: $topbar-bg;
+$page-footer-container-bg: $dark-color;
 $services-bg: #f2f6f8;
-$logo-link-bg: #ee3643;
-$logo-link-bg-hover: #ca2c37;
-$logo-link-bg-active: #ba2732;
-
+$logo-link-bg: $primary-color;
+$logo-link-bg-hover: $primary-color-hover;
+$logo-link-bg-active: $primary-color-active;
+$page-footer-link-lead-color: #ffd180;
+$catalog-preview-header-bg: #f7f3ec;
 
 // ========================================
 //    Typography
@@ -34,13 +49,31 @@ $base-font-size: 14px;
 $base-line-height: 24px;
 $base-text-color: #000;
 
+
 // ========================================
 //    Box Model
 // ========================================
 $center-container-width: 960px;
+$logo-width: 220px;
+$searchbar-width: 270px;
+$topbar-links-width: 150px;
 $social-link-size: 40px;
 $services-item-desc-indent: 320px;
+$page-heading-width: 320px;
+$contacts-info-width: 270px;
+$page-title-width: 200px;
+$account-width: 300px;
+$copyright-width: 240px;
+$social-links-width: 400px;
+$offer-item-width: 300px;
+$slider-width: 620px;
+$slide-min-height: 266px;
+$catalog-item-width: 220px;
+$services-list-width: 240px;
+$company-info-width: 540px;
+$contacts-width: 300px;
+$map-width: 300px;
+$map-height: 160px;
 
-
-//
+//Paths
 $path-spritesheet: "/img/spritesheet.png";

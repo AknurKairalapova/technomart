@@ -1,7 +1,6 @@
 .icon {
-    background-image: url(/img/spritesheet.png);
+    background-image: url($path-spritesheet);
     background-repeat: no-repeat;
-    // display: block;
 }
 
 .icon-search {

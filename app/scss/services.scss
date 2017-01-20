@@ -32,7 +32,7 @@
     position: relative;
     @extend %resetUl;
     @extend %inlineBlock;
-    width: 240px;
+    width: $services-list-width;
     margin-right: 75px;
     &:after {
         content: " ";

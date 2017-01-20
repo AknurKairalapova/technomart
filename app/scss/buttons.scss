@@ -1,8 +1,7 @@
 .btn {
-    display: inline-block;
-    vertical-align: middle;
+    @extend %inlineBlockMiddle;
     padding: 10px 30px;
-    font-size: 14px;
+    font-size: $base-font-size;
     line-height: 18px;
     text-align: center;
     text-decoration: none;
@@ -11,7 +10,7 @@
 }
 .btn-primary {
     color: #fff;
-    background: #ee3643;
+    background: $primary-color;
     &:hover {
         background: #ca2c37;
     }
