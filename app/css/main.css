@@ -76,7 +76,7 @@
   font-style: normal;
 }
 .icon {
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 
@@ -177,7 +177,7 @@ body {
   position: absolute;
   top: 12px;
   left: 17px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
@@ -257,7 +257,7 @@ body {
   position: absolute;
   top: 12px;
   left: 17px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 .bookmark-link:hover,
@@ -361,7 +361,7 @@ body {
   position: absolute;
   top: 9px;
   left: 13px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   width: 19px;
   height: 19px;
@@ -409,7 +409,7 @@ body {
   position: absolute;
   top: 10px;
   left: 15px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 17px;
@@ -575,7 +575,7 @@ body {
 .social-link:after {
   content: " ";
   position: absolute;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 .social-link:hover, .social-link:active {
@@ -645,7 +645,7 @@ body {
   content: " ";
   position: absolute;
   display: block;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 .offer-item:nth-child(3n) {
@@ -656,7 +656,7 @@ body {
   content: " ";
   position: absolute;
   display: block;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   top: 0;
   right: 0;
@@ -703,7 +703,7 @@ body {
   width: 22px;
   height: 40px;
   margin-top: -20px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 .slide-prev:hover,
@@ -754,11 +754,11 @@ body {
 }
 
 .slide-perforators {
-  background: url("/pic/perforators.jpg") no-repeat;
+  background: url("../pic/perforators.jpg") no-repeat;
 }
 
 .slide-drills {
-  background: url("/pic/drills.jpg") no-repeat;
+  background: url("../pic/drills.jpg") no-repeat;
 }
 
 .slide-title {
@@ -929,7 +929,7 @@ body {
   content: " ";
   position: absolute;
   display: block;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   top: 0;
   right: 0;
@@ -1020,7 +1020,7 @@ body {
   left: 13px;
   width: 17px;
   height: 16px;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -5px -5px;
 }
@@ -1111,7 +1111,7 @@ body {
   position: absolute;
   top: -48px;
   right: 0;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   width: 10px;
   height: 279px;
@@ -1159,7 +1159,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("/img/spritesheet.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   z-index: 5;
 }
@@ -1272,5 +1272,5 @@ body {
   width: 300px;
   height: 160px;
   margin-bottom: 40px;
-  background: url("/pic/map.jpg") no-repeat;
+  background: url("../pic/map.jpg") no-repeat;
 }
