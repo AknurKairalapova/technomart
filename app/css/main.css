@@ -344,6 +344,7 @@ body {
   font-family: "Cuprum Italic", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
+  font-weight: normal;
   color: #ee3643;
 }
 
@@ -1076,7 +1077,6 @@ body {
 .services {
   padding: 70px 0 100px;
   background-color: #f2f6f8;
-  font-family: "Cuprum Bold", Arial, sans-serif;
   overflow: hidden;
 }
 .services p {
@@ -1205,7 +1205,6 @@ body {
 
 .company {
   padding: 80px;
-  font-family: "Cuprum Bold", Arial, sans-serif;
 }
 .company p {
   margin: 0;
